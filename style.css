@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    padding: 1rem 15rem 1rem 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    font-family: "Merriweather", serif;
+    i{
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 991px) {
+        padding: 1rem 2rem 1rem 2rem;
+    }
+}
+
+.hero{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.386)) ,url('./assist/images/bg-hero.jpeg');
+    background-size: cover;
+    color: white;
+    .container{
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        gap: 1rem;
+        padding: 5rem;
+        background-image: linear-gradient(rgba(77, 171, 74, 0.187));
+        .f{
+            position: absolute;
+            border-top: 3px white solid;
+            border-right: 3px white solid;
+            width: 100px;
+            height: 100px;
+            top: 5px;
+            right: 5px;
+        }
+        .l{
+            position: absolute;
+            border-bottom: 3px white solid;
+            border-left: 3px white solid;
+            width: 100px;
+            height: 100px;
+            bottom: 5px;
+            left: 5px;
+        }
+        p{
+            font-family: "Open Sans", sans-serif;
+        }
+        h2{
+            font-family: "Merriweather", serif;
+            font-size: 4.5rem;
+            font-weight: 500;
+        }
+        button{
+            padding: 0.75rem 2rem;
+            background: rgb(121, 205, 31);
+            border: none;
+            color: white;
+        }
+        @media screen and (min-width: 768px) and (max-width: 991px){
+            width: 600px;
+        }
+        @media screen and (max-width: 767px){
+            width: 300px;
+            h2{
+                font-size: 2.5rem;
+            }
+        }
+
+    }
+}
