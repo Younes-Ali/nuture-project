@@ -297,3 +297,64 @@ header{
         }
     }
 }
+
+.actions{
+    width: 100%;
+    background-image: url('./assist/images/bg-actions.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    .container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        .card{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: calc(100% / 3 - 2rem);
+            height: 405.5px;
+            background: rgba(255, 255, 255, 0.365);
+            padding: 2rem;
+            @media screen and (min-width: 768px) and (max-width: 1150px){
+                width: calc(100% / 2 - 2rem);
+            }
+            @media screen and (max-width: 769px){
+                width: calc(100% - 2rem);
+            }
+            div{
+                display: flex;
+                span{
+                    font-size: 96px;
+                    line-height: 96px;
+                    color: #346473;
+                }
+                h3{
+                    display: inline;
+                    font-size: 24px;
+                    line-height: 28.8px;
+                    padding: 1rem;
+                }
+            }
+            p{
+                font-family: "Open Sans", sans-serif;
+                font-size: 16px;
+                line-height: 28.8px;
+            }
+            a{
+                color: black;
+                font-family: "Open Sans", sans-serif;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 25.6px;
+                text-decoration: 3px underline #346473;
+                text-underline-offset: 3px;
+            }
+        }
+    }
+}
