@@ -282,28 +282,31 @@ header{
                 position: relative;
                 box-shadow: rgba(26, 26, 26, 0.4) 0px 0px 40px 0px;
                 .img1{
-                width: 385px;
-                max-width: 40%;
-                height: 477px;
-                object-fit: cover;
-                position: absolute;
-                top: -14.5rem;
-                right: -7.35rem;
-                z-index: 3;
-                box-shadow: rgba(26, 26, 26, 0.4) 0px 0px 40px 0px;
-            }
-            .img2{
-                width: 457px;
-                max-width: 90%;
-                height: 310px;
-                max-height: 80%;
-                object-fit: cover;
-                position: absolute;
-                right: 35%;
-                top: 35%;
-                z-index: 2;
-                box-shadow: rgba(26, 26, 26, 0.4) 0px 0px 40px 0px;
-            }
+                    width: 385px;
+                    max-width: 100%;
+                    height: 477px;
+                    object-fit: cover;
+                    position: absolute;
+                    top: -14.5rem;
+                    right: -7.35rem;
+                    z-index: 3;
+                    box-shadow: rgba(26, 26, 26, 0.4) 0px 0px 40px 0px;
+                    @media screen and (max-width: 1150px){
+                        right: -6rem;
+                    }
+                }
+                .img2{
+                    width: 457px;
+                    max-width: 90%;
+                    height: 310px;
+                    max-height: 80%;
+                    object-fit: cover;
+                    position: absolute;
+                    right: 35%;
+                    top: 35%;
+                    z-index: 2;
+                    box-shadow: rgba(26, 26, 26, 0.4) 0px 0px 40px 0px;
+                }
             }
         
         }
