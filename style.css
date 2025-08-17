@@ -280,6 +280,7 @@ header{
                 background: #e5e5e5;
                 z-index: 1;
                 position: relative;
+                box-shadow: rgba(26, 26, 26, 0.4) 0px 0px 40px 0px;
                 .img1{
                 width: 385px;
                 max-width: 100%;
@@ -287,8 +288,9 @@ header{
                 object-fit: cover;
                 position: absolute;
                 top: -14.5rem;
-                right: -6.35rem;
+                right: -7.35rem;
                 z-index: 3;
+                box-shadow: rgba(26, 26, 26, 0.4) 0px 0px 40px 0px;
             }
             .img2{
                 width: 457px;
@@ -300,6 +302,7 @@ header{
                 right: 35%;
                 top: 35%;
                 z-index: 2;
+                box-shadow: rgba(26, 26, 26, 0.4) 0px 0px 40px 0px;
             }
             }
         
